@@ -35,9 +35,9 @@ function displayPics(){
       viewed.push(rando);
     }
   }
-  console.log(rando);
+
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
-  // PUT YOUR RESPONSE IN THIS COMMENT
+  // The variable 'rando' was not defined in this global context once we changed the var to let - since variables declared with let only have block scoping, once we exited the while loop on line 32 (at this version in the file) it was no longer defined. When it was declared with a var statement, 'rando' was a global variable, so was not limited to the scope of the while loop.
   console.log(viewed);
 
   for (let i = 0; i < 3; i++){
