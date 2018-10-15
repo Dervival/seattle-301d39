@@ -7,7 +7,7 @@ const theOldWay = function(course) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('The old way:', theOldWay('Code 301'));
+console.log('The old way:', theOldWay('Code 301'));
 
 
 // STEP 2
@@ -18,7 +18,7 @@ const theNewWay = (course) => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('The new way:', theNewWay('Code 301'));
+console.log('The new way:', theNewWay('Code 301'));
 
 
 // STEP 3
@@ -28,17 +28,17 @@ const withoutParens = course => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Without parens:', withoutParens('Code 301'));
+console.log('Without parens:', withoutParens('Code 301'));
 
 
 // STEP 4
 // If the code block contains a single line of code, we can write everything on one line
 // We no longer need the curly braces and the return is implicit
 // Without an arrow function, we need to explicitly type "return"
-const oneLiner = course => `I cam currently enrolled in ${course}`;
+const oneLiner = course => `I am currently enrolled in ${course}`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('As a one-liner:', oneLiner('Code 301'));
+console.log('As a one-liner:', oneLiner('Code 301'));
 
 
 // STEP 5
@@ -49,7 +49,7 @@ const add = function(num1, num2) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Let\'s do some math:', add(4, 5));
+console.log('Let\'s do some math:', add(4, 5));
 
 
 // STEP 6
@@ -58,7 +58,7 @@ const add = function(num1, num2) {
 const addOneLiner = (num1, num2) => `${num1} + ${num2} = ${num1 + num2}`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Add as a one-liner:', addOneLiner(4, 5));
+console.log('Add as a one-liner:', addOneLiner(4, 5));
 
 
 // STEP 7
@@ -70,7 +70,7 @@ const multiLiner = word => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Multi-line arrow function:', multiLiner('hello'));
+console.log('Multi-line arrow function:', multiLiner('hello'));
 
 
 // STEP 8
@@ -85,7 +85,7 @@ const oldObject = function(array) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Hello from the old object function', oldObject(['hi', 'hello', 'are you there?']));
+console.log('Hello from the old object function', oldObject(['hi', 'hello', 'are you there?']));
 
 
 // STEP 9
@@ -98,52 +98,59 @@ const newObject = array => ({
 });
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Hello from the new object function', newObject(['hi', 'hello', 'are you there?']));
+console.log('Hello from the new object function', newObject(['hi', 'hello', 'are you there?']));
 
 
 // STEP 10
 // Uncomment the console.log lines to view the output of each function in the browser console.
 // Refactor each function into an arrow function.
-// Write your solutions on a single line wherever possible. 
+// Write your solutions on a single line wherever possible.
 
+// let sum = function(a, b, c, d) {
+//   return a + b + c + d;
+// };
 
-
-let sum = function(a, b, c, d) {
-  return a + b + c + d;
-};
-
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sum(1, 2, 3, 4));
-
-
-let objectLit = function() {
-  return {
-    key1: 'value1',
-    key2: 'value2',
-    key3: 'value3',
-  };
-};
+let sum = (a,b,c,d) => `${a + b + c + d}`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(objectLit());
+console.log(sum(1, 2, 3, 4));
 
 
-let sumAndProduct = function(a, b) {
-  let sum = a + b;
-  let product = a * b;
-  return [sum, product];
-};
+// let objectLit = function() {
+//   return {
+//     key1: 'value1',
+//     key2: 'value2',
+//     key3: 'value3',
+//   };
+// };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sumAndProduct(3, 9));
-
-
-let message = function(name) {
-  return `Hello, ${name}!`;
-};
+//No parameters === needs an empty set of parens between assignment and arrow?
+let objectLit = () => ({key1: 'value1', key2: 'value2', key3: 'value3'});
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(message('Allie'));
+console.log(objectLit());
+
+
+// let sumAndProduct = function(a, b) {
+//   let sum = a + b;
+//   let product = a * b;
+//   return [sum, product];
+// };
+
+let sumAndProduct = (a,b) => {return [(a+b), (a*b)]};
+
+// TODO: Uncomment the following line of code to see the output in the browser console
+console.log(sumAndProduct(3, 9));
+
+
+// let message = function(name) {
+//   return `Hello, ${name}!`;
+// };
+
+let message = name => {return `Hello, ${name}!`;};
+
+// TODO: Uncomment the following line of code to see the output in the browser console
+console.log(message('Allie'));
 
 
 let Student = function(name, age, hometown) {
@@ -152,29 +159,43 @@ let Student = function(name, age, hometown) {
   this.hometown = hometown;
 };
 
+//not really working and no better than the constructor above; no contextual this within arrow functions, inherits the context from its most recent non-arrow function parent?
+// let Student = function(name, age, hometown) {
+//   setProperties(() => {
+//     this.name = name;
+//     this.age = age;
+//     this.hometown = hometown;
+//   }
+// };
+
 let joe = new Student('Joe', 'Schmoe', 100);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
-// console.log(joe);
+console.log(joe);
 
 
 Student.prototype.greeting = function() {
   return `Hi, my name is ${this.name}`;
 };
 
+// lost the 'this' context...
+// Student.prototype.greeting = () => {return `Hi, my name is ${this.name}`;};
+
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this method to break!
-// console.log(joe.greeting());
+console.log(joe.greeting());
 
 
-Student.courseName = function() {
-  return 'This student is enrolled in Code 301.';
-};
+// Student.courseName = function() {
+//   return 'This student is enrolled in Code 301.';
+// };
+
+//seems to work since there's no contextual this here
+Student.courseName = () => {return 'This student is enrolled in Code 301.';};
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(Student.courseName());
-
+console.log(Student.courseName());
 
 
 // STEP 11
@@ -184,17 +205,17 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scope());
+console.log(joe.scope());
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scopeArrow());
+console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-// 
+//  Contextual this during invocation of joe.scope() is a reference to the joe instantiation of a Student object.
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+//  Contextual this during invocation of joe.scopeArrow() is a reference to the Window document itself; since scopeArrow is uses arrow notation, it inherits its contextual this from the scope surrounding it (which is the document window in this case, *not* the object that we were attempting to make a prototype method for)
 // 3. Explain why "this" is different when an arrow function is used.
-// 
+//  Arrow functions do not have their own inherent contextual this; instead, they inherit it from any scope that encapsulates it. For instance, if I had embedded the arrow function inside of the scope of another object outside of the Student object, the scopeArrow function would have taken in the contextual this of that other object.
