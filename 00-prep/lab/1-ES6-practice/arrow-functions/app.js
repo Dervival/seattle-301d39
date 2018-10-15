@@ -106,14 +106,13 @@ console.log('Hello from the new object function', newObject(['hi', 'hello', 'are
 // Refactor each function into an arrow function.
 // Write your solutions on a single line wherever possible. 
 
+// let sum = function(a, b, c, d) {
+//   return a + b + c + d;
+// };
 
-
-let sum = function(a, b, c, d) {
-  return a + b + c + d;
-};
-
+let sum = (a,b,c,d) => `${a + b + c + d}`;
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sum(1, 2, 3, 4));
+console.log(sum(1, 2, 3, 4));
 
 
 let objectLit = function() {
