@@ -1,0 +1,30 @@
+nav, article, aside, footer section {
+    margin: 0 auto;
+    width: 900px;
+}
+
+nav {
+    margin-top: 25px;
+}
+
+nav ul {
+    float: right;
+}
+  
+nav li {
+    float: left;
+    padding-right: 2px;
+}
+
+section hr {
+    border-bottom: 1px solid #eee;
+    height: 0;
+}
+  
+footer section p{
+    padding: 50px 0;
+    line-height: 1.5em;
+    text-align: center;
+    color: #aaa;
+}
+  

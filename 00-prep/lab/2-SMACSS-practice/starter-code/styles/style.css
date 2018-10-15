@@ -1,12 +1,3 @@
-nav, article, aside, footer section {
-  margin: 0 auto;
-  width: 900px;
-}
-
-nav {
-  margin-top: 25px;
-}
-
 #logo {
   float: left;
   padding-bottom: 25px;
@@ -31,15 +22,6 @@ nav {
   font-family: 'Abel', sans-serif;
   font-size: .65em;
   text-transform: uppercase;
-}
-
-nav ul {
-  float: right;
-}
-
-nav li {
-  float: left;
-  padding-right: 2px;
 }
 
 .print, .date {
@@ -104,7 +86,6 @@ aside p {
   width: 65%;
   margin: 0;
   text-indent: 0;
-
 }
 
 aside button {
@@ -116,17 +97,4 @@ aside button {
   color: #fff;
   font-size: 1.2em;
   border: none;
-}
-
-section hr {
-  border-bottom: 1px solid #eee;
-  height: 0;
-}
-
-
-footer section p{
-  padding: 50px 0;
-  line-height: 1.5em;
-  text-align: center;
-  color: #aaa;
 }
