@@ -179,18 +179,23 @@ Student.prototype.greeting = function() {
   return `Hi, my name is ${this.name}`;
 };
 
+// lost the 'this' context...
+// Student.prototype.greeting = () => {return `Hi, my name is ${this.name}`;};
+
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this method to break!
 console.log(joe.greeting());
 
 
-Student.courseName = function() {
-  return 'This student is enrolled in Code 301.';
-};
+// Student.courseName = function() {
+//   return 'This student is enrolled in Code 301.';
+// };
+
+//seems to work since there's no contextual this here
+Student.courseName = () => {return 'This student is enrolled in Code 301.';};
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(Student.courseName());
-
 
 
 // STEP 11
