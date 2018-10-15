@@ -7,7 +7,7 @@ const theOldWay = function(course) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('The old way:', theOldWay('Code 301'));
+console.log('The old way:', theOldWay('Code 301'));
 
 
 // STEP 2
@@ -18,7 +18,7 @@ const theNewWay = (course) => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('The new way:', theNewWay('Code 301'));
+console.log('The new way:', theNewWay('Code 301'));
 
 
 // STEP 3
@@ -28,17 +28,17 @@ const withoutParens = course => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Without parens:', withoutParens('Code 301'));
+console.log('Without parens:', withoutParens('Code 301'));
 
 
 // STEP 4
 // If the code block contains a single line of code, we can write everything on one line
 // We no longer need the curly braces and the return is implicit
 // Without an arrow function, we need to explicitly type "return"
-const oneLiner = course => `I cam currently enrolled in ${course}`;
+const oneLiner = course => `I am currently enrolled in ${course}`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('As a one-liner:', oneLiner('Code 301'));
+console.log('As a one-liner:', oneLiner('Code 301'));
 
 
 // STEP 5
