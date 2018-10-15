@@ -104,7 +104,7 @@ console.log('Hello from the new object function', newObject(['hi', 'hello', 'are
 // STEP 10
 // Uncomment the console.log lines to view the output of each function in the browser console.
 // Refactor each function into an arrow function.
-// Write your solutions on a single line wherever possible. 
+// Write your solutions on a single line wherever possible.
 
 // let sum = function(a, b, c, d) {
 //   return a + b + c + d;
@@ -143,12 +143,14 @@ let sumAndProduct = (a,b) => {return [(a+b), (a*b)]};
 console.log(sumAndProduct(3, 9));
 
 
-let message = function(name) {
-  return `Hello, ${name}!`;
-};
+// let message = function(name) {
+//   return `Hello, ${name}!`;
+// };
+
+let message = name => {return `Hello, ${name}!`;};
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(message('Allie'));
+console.log(message('Allie'));
 
 
 let Student = function(name, age, hometown) {
