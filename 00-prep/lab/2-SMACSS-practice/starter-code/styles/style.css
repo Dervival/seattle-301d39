@@ -1,13 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Abel|Oswald:700|Yellowtail|Patrick+Hand');
-
-* {
-  font-family: times;
-}
-
-body {
-  background: #fff;
-}
-
 nav, article, aside, footer section {
   margin: 0 auto;
   width: 900px;
@@ -52,19 +42,6 @@ nav li {
   padding-right: 2px;
 }
 
-hr {
-  clear: both;
-  border: 0;
-  height: 13px;
-  background-image: url('img/hr-img.gif');
-}
-
-h2 {
-  margin-top: 50px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 2.5em;
-}
-
 .print, .date {
   color: #a9a8a5;
   font-family: 'Abel', sans-serif;
@@ -87,18 +64,6 @@ h2 {
 
 .print img {
   margin-right: 3px;
-}
-
-main p {
-  color: #333;
-  font-size: 1.2em;
-  line-height: 1.3em;
-  text-indent: 30px;
-  margin: 20px 0px;
-}
-
-input {
-  font-family: 'Patrick Hand', cursive;
 }
 
 .recipe {
@@ -164,7 +129,4 @@ footer section p{
   line-height: 1.5em;
   text-align: center;
   color: #aaa;
-}
-
-
 }
