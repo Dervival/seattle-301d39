@@ -2,11 +2,12 @@
 @media (max-width: 768px) {
     * {
         margin: 0 auto;
-        color: red;
+        color: black;
     }
 
     /* A */
     div {
+        background-color: #0000FF;
         margin: 0 auto;
         height: 75px;
         width: 480px;
@@ -19,33 +20,62 @@
 
     /* B */
     section > div{
-        color:orange;
+        background-color: #00EE11;
         height: 150px;
         width: 480px;
     }
     /* C, D */
     section > section > section > div{
-        color:magenta; 
         height: 125px;
         width: 480px;
     }
+
+    /* C specifically */
+    section > section > section > div:first-child{
+        background-color: #0022DD;
+    }
     
+    /* D specifically */
+    section > section > section > div:last-child{
+        background-color: #00CC33;
+    }
+
     section > section > section > section {
         width: 480px;
     }
+
     /* E, F, G, H */
     section > section > section > section > div{
         display: inline-block;
-        color:teal; 
         height: 250px;
         width: 240px;
         margin-left: 0px;
         margin-right: -4px;
     }
 
+    /* E */
+    section > section > section > section:first-of-type > div:first-child{
+        background-color: #0044BB;
+    }
+
+    /* F */
+    section > section > section > section:first-of-type > div:last-child{
+        background-color: #AA5500;
+    }
+
+    /* G */
+    section > section > section > section:last-of-type > div:first-child{
+        background-color: #996600;
+    }
+
+    /* H */
+    section > section > section > section:last-of-type > div:last-child{
+        background-color: #008877;
+    }
+
     /* I */
     section > section > section > div:only-child{
-        color:black;
+        background-color: #007777;
         height: 80px;
         width: 480px; 
     }

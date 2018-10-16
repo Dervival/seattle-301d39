@@ -11,3 +11,10 @@ div {
 section{
     overflow: hidden;
 }
+
+p{
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
