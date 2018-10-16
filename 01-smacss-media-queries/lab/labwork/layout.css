@@ -48,9 +48,9 @@
     section > section > section > section > div{
         display: inline-block;
         height: 250px;
-        width: 240px;
+        width: 50%;
         margin-left: 0px;
-        margin-right: -4px;
+        margin-right: -2px;
     }
 
     /* E */
@@ -84,8 +84,12 @@
 /* Desktop devices - 768px minimum */
 @media (min-width: 768px) {
     * {
-        margin: 0;
-        color: red;
+        margin: 0 auto;
+        color: black;
+    }
+
+    main{
+        margin: 0 auto;
     }
 
     /* A */
@@ -97,7 +101,8 @@
     }
 
     #mainSection{
-        width: 964px;
+        /* width: 964px; */
+        width: 960px;
     }
 
     section {
@@ -110,14 +115,20 @@
         background-color: #1100EE;
         height: 600px;
         width: 200px;
+        margin-top: -10px;
+        margin-bottom: 10px;
     }
 
     #bsection{
         width: 200px;
+        margin-top: -10px;
+        margin-bottom: -10px;
     }
 
     #cSection{
         width: 760px;
+        margin-left: -2px;
+        margin-right: -2px;
     }
 
     /* C, D */
@@ -137,26 +148,30 @@
     section > section > section > div:last-child{
         background-color: #3300CC;
     }
-
+/* 
     section > section > section > section {
         width: 1000px;
-    }
+    } */
 
     /* E, F, G, H */
     section > section > section > section > div{
         display: inline-block;
         height: 250px;
         width: 190px;
-        margin-left: -4px;
-        margin-right: -3px;
+        margin-left: -1px;
+        margin-right: -1px;
     }
 
     #eSection {
         width: 760px;
+        margin-top: -4px;
+        margin-bottom: -4px;
     }
 
     .eSubSection{
-        width: 370px;
+        width: 380px;
+        margin-left: -1px;
+        margin-right: -3px;
     }
 
     /* E */
@@ -183,7 +198,9 @@
     section > section > section > div:only-child{
         background-color: #770077;
         height: 150px;
-        width: 760px; 
+        width: 760px;
+        margin-left: -4px;
+        margin-right: 4px;
     }
 }
 
