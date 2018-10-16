@@ -1,0 +1,21 @@
+
+
+div {
+    border:1px solid black;
+    display:block;
+    height:300px;
+    width:100%;
+}
+
+/* Desktops! */
+@media (min-width: 768px) {
+
+    section {
+        overflow:hidden;
+    }
+
+    div {
+        float:left;
+        width:300px;
+    }
+}
