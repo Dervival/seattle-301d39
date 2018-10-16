@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    color: green;
+}
+div {
+    border: 1px solid #090909;
+    display: block;
+    width: 100%;
+}
+
+section{
+    overflow: hidden;
+}

@@ -1,0 +1,72 @@
+/* Mobile devices - 768px maximum */
+@media (max-width: 768px) {
+    * {
+        margin: 0 auto;
+        color: red;
+    }
+
+    /* A */
+    div {
+        margin: 0 auto;
+        height: 75px;
+        width: 480px;
+    }
+
+    section{
+        clear: both;
+        margin: 0 auto;
+    }
+
+    /* B */
+    section > div{
+        color:orange;
+        height: 150px;
+        width: 480px;
+    }
+    /* C, D */
+    section > section > section > div{
+        color:magenta; 
+        height: 125px;
+        width: 480px;
+    }
+    
+    section > section > section > section {
+        width: 480px;
+    }
+    /* E, F, G, H */
+    section > section > section > section > div{
+        display: inline-block;
+        color:teal; 
+        height: 250px;
+        width: 240px;
+        margin-left: 0px;
+        margin-right: -4px;
+    }
+
+    /* I */
+    section > section > section > div:only-child{
+        color:black;
+        height: 80px;
+        width: 480px; 
+    }
+}
+
+/* Desktop devices - 768px minimum */
+@media (min-width: 768px) {
+    * {
+        margin: 0 auto;
+        color: blue;
+    }
+
+    div {
+        float: left;
+        margin: 0 auto;
+    }
+
+    section{
+        clear: both;
+        margin: 0 auto;
+        width: 960px;
+    }
+}
+
