@@ -1,0 +1,65 @@
+* {
+    box-sizing:border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+}
+
+body > header, body > footer {
+    background:#444;
+    color: #eee;
+    height: 70px;
+    line-height:70px;
+}
+
+main {
+    flex:1;
+}
+
+.deck {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    display:flex;
+    flex-direction:column;
+    width: 300px;
+}
+
+.card header {
+    order:1;
+}
+
+.card p {
+    order: 3
+}
+
+.card img {
+    order: 2;
+}
+
+.card .links {
+    margin-top:1em;
+    order:4;
+    display:flex;
+    justify-content: space-between;
+}
+
+.primary {
+    order:2;
+    padding:.25em 1em;
+    background:blue;
+    color:ivory;
+}
+
+.secondary {
+    order:1
+}

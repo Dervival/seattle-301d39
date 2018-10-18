@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Popular Dogs</title>
+    <link rel="stylesheet" href="styles.css">
+<!-- Script tag for handlbars template -->
+    <script id="dog-handlebars" type="text/x-handlebars-template">
+      <section id="dog-template">
+        <h2>{{ name }}</h2>
+        <img src="{{ image_url }}" alt="">
+        <p>{{ hobbies }}</p>
+      </section>
+    </script>
+
+  </head>
+  <body>
+    <header>
+      <h1>Popular Dogs</h1>
+    </header>
+    <main>
+      <section id="dog-template">
+        <h2></h2>
+        <img src="" alt="">
+        <p></p>
+      </section>
+    </main>
+    <section id="dog-container"></section>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
