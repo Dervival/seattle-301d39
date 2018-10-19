@@ -1,0 +1,43 @@
+<!-- Note: you may use this starter code, but it is not a requirement -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Gallery of Horns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/site.css">
+    <script id="img-template" type="text/x-handlebars-template">
+      <div class="card {{keyword}}">
+        <h2>{{title}} {{horns}}</h2>
+        <img src="{{image_url}}" alt="picture of a {{title}}">
+        <p>{{description}}</p>
+      </div>
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>The Gallery of Horns</h1>
+      <select>
+        <option value="default">Filter by Keyword</option>
+      </select>
+    </header>
+    <main>
+      <form>
+        Sort By : 
+        <label><input name="sort" data-sortby="title" type="radio"> Title</label>
+        <label><input name="sort" data-sortby="horns" type="radio"> Horns</label>
+      </form>
+      <section class="deck"></section>
+    </main>
+    <footer>
+      &copy; 2018 Code Fellows
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

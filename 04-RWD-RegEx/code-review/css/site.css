@@ -1,0 +1,18 @@
+*{
+  box-sizing: border-box;
+}
+
+.deck {
+  overflow: hidden;
+}
+
+.card {
+  float: left;
+  margin: 1em;
+  width: 250px;
+  height: 250px;
+}
+
+.card img {
+  max-width: 100%;
+}
