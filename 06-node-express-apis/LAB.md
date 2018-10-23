@@ -47,6 +47,15 @@ You will have access to view the code base for the client, but will not be able 
 
 For this lab assignment, you will convert a location entered by the user into a latitude and longitude, then use those values to request weather information for that location. As your City Explorer back end progresses in labs 6 through 9, you will use the latitude and longitude to request information from other APIs from the same search query.
 
+### Workflow
+- We will be using the Trello project management tool for the duration of this project.
+- Go to the [City Explorer Trello Board](https://trello.com/b/ZmD87LCC), open the "Settings" link and "Make a copy" of the board
+- Also on the Settings tab, click the "Filter" link to view just the current day
+- With your partner, review the user stories and analyze the feature requests and requirements in the lab.
+- Within each story, create the necessary tasks as a checklist and any additional notes or validations you need to complete the story.  Be careful to order things properly, taking dependencies into account.
+- During the day with your partner, check off tasks as you complete them, and move the story cards through the workflow.
+
+
 ### Repository set-up
 
 - One person from your group should create a new repository on GitHub called `lab-06-back-end`. Add your partner(s) as collaborator(s).
@@ -191,3 +200,5 @@ _Your `README.md` must include:_
   - A question within the context of today's lab assignment
   - An observation about the lab assignment, or related 'Ah-hah!' moment
   - How long you spent working on this assignment
+
+
