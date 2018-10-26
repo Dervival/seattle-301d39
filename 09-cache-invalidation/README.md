@@ -8,12 +8,12 @@ Today we will continue our discussion about SQL databases and the relationships 
 
 - Warm-up exercise
 - Review code challenges
+- Introduction of today's code challenge topic
 - Code review of lab assignment
 - Data modeling and schemas (continued)
 - Primary keys, foreign keys, and joins
 - Code Demo
 - Lab Preview
-- Introduction of Code Challenge topic
 
 ## Learning Objective
 
