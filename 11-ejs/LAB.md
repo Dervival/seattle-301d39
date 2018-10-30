@@ -62,6 +62,34 @@ Today's portion of the application involves requesting books from the API. The c
 
 Your entire application will be deployed on Heroku.
 
+
+### Time Estimate
+
+For each of the features listed below, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
+
+```
+Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+```
+
+Add this information to your README.
+
+### Workflow
+- We will be using the Trello project management tool for the duration of this project.
+- Go to the [Open Book Trello Board](https://trello.com/b/2GAur1IN/open-shelf-a-book-wiki), open the "Settings" link and "Make a copy" of the board
+- Also on the Settings tab, click the "Filter" link to view just the current day
+- With your partner, review the user stories and analyze the feature requests and requirements in the lab.
+- Within each story, note the acceptance criteria ("Given ... When ... Then...") and the checklist of feature tasks. Be careful to execute tasks in order as they are often dependencies of one another.
+- During the day with your partner, check off tasks as you complete them, and move the story cards through the workflow.
+
+
 ### Repository Set-up
 
 - Create a new repository on GitHub named `book_app`. Add your partner as collaborator. Clone this repository into your `codefellows/301` directory. You will be working in this same repository for labs 11 through 14.
@@ -163,7 +191,8 @@ Then the interface should deliver CSS to the browser
 
 - Employ CSS in a folder called `public` in your server heirarchy
 - Ensure the proper use of SMACCS principles. You and your partner(s) may choose to use float-based layout, grid-based layout, Flexbox, or a combination of these.
-- Style your site using a mobile-first approach. Make sure your site is responsive. Use the provided wireframes as a general guideline for the minimum styling requirements, while adding your own personal taste and color palette.
+- Style your site using a mobile-first approach. Make sure your site is responsive. 
+- Use the provided wireframes as your guide for the layout and base styling. Add your own personal taste and color palette.
 - Using the `express` static mechanism, point the static root at the public folder
 - Link your CSS files so that they properly load into the browser
 
