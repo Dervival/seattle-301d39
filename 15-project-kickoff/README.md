@@ -11,11 +11,32 @@ The exam is open-book, open-Google, open-Stack_Overflow, whatever resources you 
 ## Daily Plan
 
 - Diversity and inclusion discussion
-- Warm-up exercise
-- Review code challenges
 - Wrap up book app
-- Review of topics by request
+- Reminders and Announcements
+  - Final Exam
+  - Grading and Re-Submits
 - Discuss [final project requirements](./project-guidelines.md)
+- Today's Requirement
+- Review of final project topics
+- Pick Projects (by 4:00)
+
+## Lab 15
+**Before your team leaves for the weekend**
+* Set up a project management board (Trello or similar)
+* Create your git repository
+  * README & Doc Setup
+  * How will you use the wiki?
+  * Lock down master!
+* Connect your master branch to a new Heroku App
+* Create a web server with the following:
+  * Postgres Database with 1 table
+  * get('/', ...)
+  * Query from the table and send data to your template
+  * EJS Template for the home page that shows live data
+  * CSS and Client Side JS loaded (proof of life)
+* Initial Wireframes and proposed User Flow
+* Create your empty presentation doc and either link it to your README or upload it to your repo
+* Submit links to all of it in the group assignment 
 
 ## Project Ideas
 * Resume Linter
