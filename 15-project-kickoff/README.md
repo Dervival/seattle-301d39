@@ -16,3 +16,32 @@ The exam is open-book, open-Google, open-Stack_Overflow, whatever resources you 
 - Wrap up book app
 - Review of topics by request
 - Discuss [final project requirements](./project-guidelines.md)
+
+## Project Ideas
+* Resume Linter
+* **Political Research Tool**
+* Sickness Mapper
+* Mood analysis of text messages / mail threads (all of it)
+    * Charting 
+* **Mood Music** 
+    * Personality Music App
+    * Playlists
+    * Mood Music Live Bands Locator
+    * Night Out Incorporation
+* Virtual Life Coach
+* Virtual Jam Session
+* Bandmate Finder
+	 * Mood, Personality, Upload Riffs, etc
+* **Recycling App**
+	* Can we tie it into the google vision api to let that feed the other API
+* Magnet!
+* **Giving / Support** 
+	* Need more information?
+	* Gofund me or a registry?
+* Gun violence reporter
+	* my fear is that this is a one-time research project
+	* Can we correlate other things?
+* Pokemon Suggestor
+* Map / Locator for meeting up with someone halfway between
+	* I’m walking my dog, come find me
+	* How do you connect distinct devices? Push? Subscribe?
